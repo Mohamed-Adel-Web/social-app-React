@@ -1,0 +1,12 @@
+/** @format */
+
+.password-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-20%);
+  cursor: pointer;
+}
+.password {
+  position: relative;
+}
