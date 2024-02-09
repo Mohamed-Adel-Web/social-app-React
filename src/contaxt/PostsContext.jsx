@@ -3,7 +3,7 @@ import { useReducer, useContext, createContext, useState } from "react";
 import PostsReducer from "../reducer/PostsReducer";
 const PostsContext = createContext({});
 export default function PostsProvider({ children }) {
-  const [currentPosts, dispatch] = useReducer(PostsReducer, null);
+  const [currentPosts, dispatch] = useReducer(PostsReducer, { postsData: [] });
   const [auth, setAuth] = useState({ token: "", user: null });
   const [targetPost, setTargetPost] = useState(null);
   const [editModal, setEditModal] = useState({
